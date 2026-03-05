@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-2.0
+// SPDX-License-Identifier: GPL-2.0 OR MIT
 // XDP relay forwarder — proof of concept
 //
 // This program intercepts UDP packets on a specific port,
