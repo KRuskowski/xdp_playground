@@ -72,8 +72,9 @@ enum stat_key {
 
 static __always_inline void bump_stat(__u32 key) {
   __u64 *val = bpf_map_lookup_elem(&stats, &key);
-  if (val)
+  if (val) {
     (*val)++;
+  }
 }
 
 SEC("xdp")
